@@ -5,6 +5,7 @@ Inicialmente desenvolvido em sala com o professor na disciplina de Programação
 O banco de dados foi feto com Postgree e foram criadas as tabelas: 
 
 `sales`
+
 ![alt text](/imagens/image.png)
 
 `foods`
