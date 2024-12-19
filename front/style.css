@@ -1,0 +1,114 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #550000;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffffbb;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(236, 236, 236, 0.884);
+}
+
+.produtos{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.historico{
+  margin-left: auto ;
+}
+
+img {
+  margin-right: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5); 
+}
+
+input[type="text"] {
+  border-radius: 5px; 
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.cpf-container {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px;
+}
+
+.recheios, .pagamento {
+  width: 20%;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(236, 236, 236, 0.884);
+}
+
+#adicionais{
+  margin: 10px;
+}
+
+.recheios label {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+.close {
+  color: red;
+  float: right;
+  cursor: pointer;
+}

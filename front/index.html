@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tapiocaria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Olá, Tudo Bem?</h1>
+      <div class="produtos">
+        <label>
+          <input
+            type="checkbox"
+            class="product"
+            value="3.5"
+            data-id="1"
+            onchange="carregarPrecos()"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1743/1743544.png"
+            alt="icone de tapioca"
+          />
+        </label>
+        <br />
+        <label>
+          <input
+            type="checkbox"
+            class="product"
+            value="4.5"
+            data-id="2"
+            onchange="carregarPrecos()"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6978/6978253.png"
+            alt="Ícone de cuscuz"
+          />
+        </label>
+        <br />
+        <label>
+          <input
+            type="checkbox"
+            class="product"
+            value="4.5"
+            data-id="3"
+            onchange="carregarPrecos()"
+          />   
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1322/1322960.png"
+            alt="icone de sanduiche"
+          />
+        </label>
+      </div>
+      <div id="historico">
+        <button id="historicoBtn">Histórico de Compras</button>
+      </div>
+  
+    </header>
+
+    <div id="produtosSelecionados"></div>
+
+    <div class="cpf-container">
+      <label for="cpf">CPF do Comprador:</label>
+      <input type="text" id="cpf" placeholder="Digite seu CPF" maxlength="11" />
+    </div>
+    <div class="container">
+      <div class="recheios">
+        <h3>Escolha um Recheio:</h3>
+        <div>
+          <label>
+            <input
+              type="checkbox"
+              class="filing"
+              value="0.8"
+              onchange="atualizarPreco()"
+            />
+            Queijo (R$ 0,80)
+          </label>
+          <br />
+          <label>
+            <input
+              type="checkbox"
+              class="filing"
+              value="1.5"
+              onchange="atualizarPreco()"
+            />
+            Carne (R$ 1,50)
+          </label>
+          <br />
+          <label>
+            <input
+              type="checkbox"
+              class="filing"
+              value="1.0"
+              onchange="atualizarPreco()"
+            />
+            Frango (R$ 1,00)
+          </label>
+          <br />
+          <label>
+            <input
+              type="checkbox"
+              class="filing"
+              value="0.6"
+              onchange="atualizarPreco()"
+            />
+            Presunto (R$ 0,60)
+          </label>
+        </div>
+      </div>
+
+      <div class="pagamento">
+        <h3>Pague sem se arrepender:</h3>
+        <p id="adicionais">Sem adicionais</p>
+        <p>Preço total: R$ <span id="precoTotal">0.00</span></p>
+        <button onclick="processarPagamento()">Pagar</button>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="fecharModal">&times;</span>
+          <h2>Histórico de Compras</h2>
+          <div id="historicoDetalhes"></div>
+      </div>
+  </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
