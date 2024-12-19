@@ -12,6 +12,7 @@ O banco de dados foi feto com Postgree e foram criadas as tabelas:
 ![alt text](/imagens/image-1.png)
 
 `filings`
+
 ![alt text](/imagens/image-2.png)
 
 
@@ -19,19 +20,27 @@ O banco de dados foi feto com Postgree e foram criadas as tabelas:
 O backend foi feito em Kotlin usando o framework SpringBoot.Foram feitos os seguintes endpoints:
 
 `/food`
+
 ![alt text](/imagens/image-3.png)
+
 Esse endpoint vai listar as opções de recheios de determinada comida (informada pelo id) e informar seus valores.
 
 ![alt text](/imagens/image-4.png)
+
 Na imagem acima o id selecionado foi o da tapioca.
 
 `/history`
+
 ![alt text](/imagens/image-6.png)
+
 Esse endpoint vai retornar o histórico de compras a partir do CPF do comprador.
+
 ![alt text](/imagens/image-5.png)
 
 `/payment`
+
 ![alt text](/imagens/image-7.png)
+
 Esse endpoint será responsável pelo pagamento dos produtos.
 
 ![alt text](/imagens/image-8.png)
